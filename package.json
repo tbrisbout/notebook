@@ -1,0 +1,22 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "Simple note app in Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbrisbout/notebook.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "Thomas BRISBOUT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbrisbout/notebook/issues"
+  },
+  "homepage": "https://github.com/tbrisbout/notebook#readme"
+}
