@@ -27,8 +27,9 @@
 
   btn.addEventListener('click', () => {
     notes[$('li.selected').id].content = editor.value()
-    fs.writeFile('./notes.json', JSON.stringify(notes), () => {
-      console.log('OK')
-    })
+    fs.writeFile('./notes.json', JSON.stringify(notes), () => new Notification('Notebook', {
+      body: 'notes sucessfully saved',
+      icon: './icon.png',
+    }))
   })
 })()
