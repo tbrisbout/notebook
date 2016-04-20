@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/tbrisbout/notebook#readme",
   "devDependencies": {
+    "electron-packager": "^7.0.0",
+    "electron-prebuilt": "^0.37.6",
     "eslint": "^2.8.0",
     "eslint-config-airbnb": "^7.0.0"
   }
