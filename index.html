@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>Hello, DevoxxFR</h1>
+    <header class="toolbar toolbar-header">
+      <h1 class="title">Note manager</h1>
+    </header>
+    <main>
+      <ul id="list" class="list-group"></ul>
+      <div id="editor">
+        <textarea autofocus placeholder="Write something"></textarea>
+      </div>
+    </main>
+    <footer class="toolbar toolbar-footer">
+      <button id="saveBtn" class="btn btn-primary">Save</button>
+    </footer>
   </body>
 </html>
