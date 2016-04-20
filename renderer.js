@@ -4,6 +4,9 @@
   const editor = new SimpleMDE({ toolbar: false })
 
   const fs = require('fs')
+  const Firebase = require('firebase')
+  const db = new Firebase('https://torrid-fire-1337.firebaseio.com')
+
   const { remote } = require('electron')
   const notes = remote.getGlobal('notes')
 
@@ -25,11 +28,11 @@
     notes[li.id].title = li.textContent
   })
 
+  const notify = body => new Notification('Notebook', { body, icon: './icon.png' })
+
   btn.addEventListener('click', () => {
     notes[$('li.selected').id].content = editor.value()
-    fs.writeFile('./notes.json', JSON.stringify(notes), () => new Notification('Notebook', {
-      body: 'notes sucessfully saved',
-      icon: './icon.png',
-    }))
+    fs.writeFile('./notes.json', JSON.stringify(notes), () => notify('notes successfully saved'))
+    db.set(notes, () => notify('Notes saved on cloud'))
   })
 })()

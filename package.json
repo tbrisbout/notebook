@@ -27,6 +27,7 @@
     "electron-prebuilt": "^0.37.6",
     "eslint": "^2.8.0",
     "eslint-config-airbnb": "^7.0.0",
+    "firebase": "^2.4.2",
     "gulp": "^3.9.1",
     "simplemde": "^1.10.1"
   }
