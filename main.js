@@ -1,7 +1,7 @@
 'use strict'
 
 const { app, BrowserWindow } = require('electron')
-const { client } = require('electron-connect')
+// const { client } = require('electron-connect')
 
 const notes = require('./notes.json')
 global.notes = notes
@@ -21,4 +21,4 @@ app.on('ready', () => {
 
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() })
 
-client.create(mainWindow)
+// client.create(mainWindow)
