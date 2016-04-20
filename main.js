@@ -3,6 +3,9 @@
 const { app, BrowserWindow } = require('electron')
 const { client } = require('electron-connect')
 
+const notes = require('./notes.json')
+global.notes = notes
+
 let mainWindow
 
 app.on('ready', () => {
