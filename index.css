@@ -1,0 +1,28 @@
+body {
+  overflow: auto;
+  font-size: 18px;
+}
+
+#list {
+  position: fixed;
+  width: 250px;
+}
+
+#editor {
+  margin-left: 250px;
+  width: 90%;
+  height: 100%;
+}
+
+header {
+  height: 20px;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}

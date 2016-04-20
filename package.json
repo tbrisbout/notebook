@@ -25,6 +25,7 @@
     "electron-packager": "^7.0.0",
     "electron-prebuilt": "^0.37.6",
     "eslint": "^2.8.0",
-    "eslint-config-airbnb": "^7.0.0"
+    "eslint-config-airbnb": "^7.0.0",
+    "simplemde": "^1.10.1"
   }
 }
